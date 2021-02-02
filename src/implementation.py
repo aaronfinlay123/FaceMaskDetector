@@ -2,7 +2,7 @@ from keras.models import load_model
 import cv2
 import numpy as np
 
-model = load_model('model-018.model')
+model = load_model('model-020.model')
 
 face_clsfr=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
@@ -10,6 +10,7 @@ source=cv2.VideoCapture(0)
 
 labels_dict={0:'NO MASK',1:'MASK'}
 color_dict={0:(0,0,255),1:(0,255,0)}
+
 
 while(True):
 
